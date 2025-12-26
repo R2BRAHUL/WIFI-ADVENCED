@@ -1,9 +1,3 @@
-# =========================================================
-# Cyber7F BD WiFi Hacker - Advanced Auto System
-# Author  : R2BRAHUL
-# License : Cyber7F BD Educational License
-# Usage   : Educational & Authorized Security Testing Only
-# =========================================================
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 import sys
@@ -45,7 +39,7 @@ class NetworkAddress:
             self._str_repr = self._int2mac(mac)
         elif isinstance(mac, str):
             self._str_repr = mac.replace('-', ':').replace('.', ':').upper()
-            self._int_repr = self._mac2int(mac)
+            self._int_repr = self._mac2int(mac)W8
         else:
             raise ValueError('MAC address must be string or integer')
 
@@ -1302,7 +1296,7 @@ class MenuHandler:
         """Main menu loop"""
         while True:
             os.system('clear' if os.name == 'posix' else 'cls')
-            show_ Cyber7F BD _banner()
+            show_w8team_banner()
             show_main_menu()
             
             try:
@@ -1328,7 +1322,7 @@ class MenuHandler:
                     self.open_telegram()
                     
                 elif choice == "7":
-                    print("\n[*] 👋 Thanks for using Cyber7F BD WiFi Hacker!")
+                    print("\n[*] 👋 Thanks for using Team WiFi Hacker!")
                     print("[*] 📱 Follow us: https://t.me/cyber7fbd")
                     break
                     
@@ -2064,13 +2058,13 @@ Example:
 """
 
 
-def show_ Cyber7F BD _banner():
+def show_w8team_banner():
     current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     banner_text = f"""
 ╔═══════════════════ LIVE STATISTICS ═══════════════════╗
 ║ TIME: {current_time}                    ║
-║ AUTHOR: Cyber7F BD/R2BRAHUL                              ║
-║ TELEGRAM: https://t.me/cyber7fbd                     ║
+║ AUTHOR: Cyber7F BD/ ▓▓▓▓▓▓▓▓                              ║
+║ TELEGRAM: https://t.me/cyber7fbd                      ║
 ╚═══════════════════════════════════════════════════════╝
     """
     print(banner_text)
@@ -2081,7 +2075,7 @@ def show_main_menu():
 ╔══════════════════════════════════════════════════════════════╗
 ║                  🛡️  Cyber7F BD WiFi Hacker                     ║
 ║                    Advanced Auto System                      ║
-║                     💚 This Tool is Free 💚                     ║
+║                     💚 This Tool Free 💚                     ║
 ╠══════════════════════════════════════════════════════════════╣
 ║  [1] 🚀 Auto Attack - Find High Vulnerability & Auto Hack    ║
 ║  [2] 📡 Scan & Attack WiFi - Select Target & Pixie Dust     ║
@@ -2251,10 +2245,10 @@ if __name__ == '__main__':
         print('[*] Randomizing MAC address for stealth...')
         randomize_mac(args.interface)
 
-    show_ Cyber7F BD _banner()
+    show_w8team_banner()
     while True:
         try:
-            show_ Cyber7F BD _banner()
+            show_w8team_banner()
             companion = Companion(args.interface, args.write, print_debug=args.verbose)
             if args.pbc:
                 companion.single_connection(pbc_mode=True)
